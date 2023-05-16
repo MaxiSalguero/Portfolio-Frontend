@@ -1,0 +1,102 @@
+{
+    "nameHeader": "Maximiliano Santiago Salguero",
+    "navHeader": [
+    {"nav": "Experiencias", "router": "/experiencia"},
+    {"nav": "Educacion", "router": "/educacion"},
+    {"nav": "Proyectos", "router": "/projects"},
+    {"nav": "Skills","router": "/skills"}
+    ],
+    
+    "backImage": "https://i.ibb.co/YLBX4Kx/Portada.png",
+    "image": "https://i.ibb.co/dgtK4cL/Perfil.jpg",
+    "namePorfile": "Maximiliano Salguero",
+	"position": "Full Stack JR",
+    "ubication": "Salta (Argentina)",
+    "interes": "Tengo interes",
+    "seccion": "Añadir seccion",
+    "mas": "Mas",
+
+    "titleAcerca":"Acerca de mi",
+    "informacion": [
+    {"info":"Estudiante de la Universidad Nacional de Salta"},
+    {"info":"Tecnicatura en Programacion"}
+    ],
+
+    "experience":"Experiencias",
+	"aboutExperience": [ 
+        {
+        "experience": "Backend Developer",
+        "company": "Argentina Programa - Jornada parcial",
+        "img": "https://i.ibb.co/gJDJ6K8/pixar-Logo.png",
+        "startend": "jul 2022 - actualidad",
+        "ubication": "Salta y alrededores - Argentina"
+        },
+        {
+        "experience": "Frontend Developer",
+		"company": "Argentina Programa - Jornada parcial",
+		"img": "https://i.ibb.co/mhj9Lh0/argprog.png",
+		"startend": "jull 2022 - actualidad",
+		"ubication": "Salta y alrededores - Argentina"
+	    }
+    ],
+
+	"education":"Educacion",
+    "aboutEducation":[ 
+        {
+			"school": "UNSa",
+			"title": "Tecnicatura Universitaria en Programacion",
+			"img": "https://i.ibb.co/1GW8RdJ/UNSa.png",
+			"startend": "2023 - 2026"
+        },
+        {
+            "school": "Oracle + Alura",
+			"title": "Frontend Developer",
+			"img": "https://i.ibb.co/B4ptM99/aluraoracle.jpg",
+			"startend": "2022 - 2023"
+        }
+    ],
+
+	"skills":"Hard Skills & Soft Skills",
+    "aboutSkills": [
+		{
+			"name": "Resolución de problemas",
+			"progress": 60,
+            "background": "bg-danger"
+		},
+		{
+			"name": "Diseño de Sistemas",
+			"progress": 80,
+            "background": "bg-primary"
+		},
+        {   
+            "name": "Conocimientos tecnicos",
+            "progress": 60,
+            "background": "bg-success"
+        },
+        {
+            "name": "Compañerismo",
+            "progress": 100,
+            "background": "bg-info"
+        }
+    ],
+
+    "projects":"Proyectos",
+    "aboutProjects": [
+        {
+			"name":"Encriptador de Texto - Alura",
+			"description":"Proyecto realizado para la primera parte del programa Alura Challenge.",
+            "buttonText":"Repositorio"
+        },
+        {
+			"name":"Aluraflix - Alura",
+			"description":"Mi primer proyecto FrontEnd dinamico y responsive, parte de Alura Challenge.",
+            "buttonText":"Repositorio"
+		}   
+    ],
+
+    "footer":{
+        "title":"Argentina Programa",
+        "login":"Login"
+    }
+
+}

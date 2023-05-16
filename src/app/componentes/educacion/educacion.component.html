@@ -1,0 +1,25 @@
+<!-- educación utn  -->
+<div class="m-2 p-3 border border-dark rounded-3">
+<div class="fs-4 my-2">Educacion</div>
+                
+    <div class="row mb-2" *ngFor="let edu of miPortfolio">
+        <div class="col-1 text-center ">
+            <img [src]="edu.url_logo" alt="pixar" width="60">
+        </div>
+
+        <div class="col-10 ">
+            <div class="fs-5">{{edu.institucion}}</div>
+            <div class="text-secondary fs-6">{{edu.titulo}}</div>
+            <div class="text-secondary fw-bold">{{edu.fecha_inicio}}{{edu.fecha_fin}}</div>
+        </div>
+
+        <div class="col-1 text-center">
+            <i class="bi bi-plus-lg"></i>
+            <br>
+            <i class="bi bi-pencil-fill"></i>
+            <i class="bi bi-trash-fill"></i>
+        </div>
+        
+    </div>
+
+</div>

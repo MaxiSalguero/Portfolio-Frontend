@@ -1,0 +1,50 @@
+<!-- experiencias y educaciones -->
+    <div class="m-2 p-3 border border-dark rounded-3">
+    <div class="fs-4 my-2">Experiencias</div>
+
+<!-- experiencias backend-->
+        <div id="expBackEnd">
+
+            <div class="row mb-2" *ngFor="let experiencia of miPortfolio">
+                <div class="col-1 text-center ">
+                    <img [src]="experiencia.url_logo" alt="pixar" width="60" height="40">
+                </div>
+                
+                <div class="col-10 ">
+                    <div class="fs-5">{{experiencia.experiencia}}</div>
+                    <div class="text-secondary fs-6">{{experiencia.compania}}</div>
+                    <div class="text-secondary fw-bold">{{experiencia.fecha_inicio}}{{experiencia.fecha_fin}}</div>
+                    <div class="text-secondary fw-bold">{{experiencia.localidad}}</div>
+                </div>
+                    
+                <div class="col-1 text-center">
+                    <i class="bi bi-plus-lg"></i><br>
+                    <i class="bi bi-pencil-fill"></i>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="expBackEnd">
+                    <i class="bi bi-trash-fill"></i>
+                    </a>      
+                </div>
+            </div>
+        </div>
+
+<!-- eliminar-experiencia -->
+        
+        <div class="modal modal-sm fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar Experiencia</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        ¿Desea eliminar la experiencia?
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary" onclick="eliminarItem('expBackEnd');" >Eliminar</button>
+                </div>
+              </div>
+            </div>
+        </div>   

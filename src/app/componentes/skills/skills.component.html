@@ -1,0 +1,29 @@
+<!-- Skills -->
+<div class="card shadow m-2 border-dark rounded-3">
+
+    <div class="card-header py-3">
+       <h6 class="m-1 fs-5 my-2">Hard Skills & Soft Skills</h6>
+    </div>
+   
+    <div *ngFor="let skill of miPortfolio" class="card-body">
+        <h4 class="small font-weight-bold">{{skill.skill}} <span
+        class="float-right">{{skill.avance}}%</span></h4>
+        <div class="progress mb-1">
+        <div class="progress-bar {{skill.color}}" role="progressbar" [ngStyle]="{ 'width': skill.avance + '%' }"
+            aria-valuenow="60" 
+            aria-valuemin="0" 
+            aria-valuemax="100">
+        </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div *ngFor="let skill of miPortfolio.aboutSkills">
+        <div>{{skill.name}}</div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" [ngStyle]="{ 'width': skill.progress + '%' }" ></div>
+        </div>
+    </div> -->
+
+</div>
